@@ -1,6 +1,5 @@
-"use client";
+"use client"
 
-import Navbar from '../components/Navbar';
 import { useState } from 'react';
 
 const charMap = {
@@ -20,7 +19,7 @@ const charMap = {
   'ฤ': 'A', 'ฆ': 'S', 'ฏ': 'D', 'โ': 'F', 'ฌ': 'G', '็': 'H', '๋': 'J', 'ษ': 'K', 'ศ': 'L', 'ซ': ':', '.': '"',
   '(': 'Z', ')': 'X', 'ฉ': 'C', 'ฮ': 'V', 'ฺ': 'B', '์': 'N', '?': 'M',
   'ฒ': '<', 'ฬ': '>', 'ฦ': '?',
-  
+
   // อังกฤษเป็นไทย
   '1': 'ๅ', '2': '/', '3': '-', '4': 'ภ', '5': 'ถ', '6': 'ุ', '7': 'ึ', '8': 'ค', '9': 'ต', '0': 'จ',
   '-': 'ข', '=': 'ช',
@@ -82,7 +81,6 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen p-6 bg-gray-100">
-      <Navbar />
       <h1 className="text-2xl font-bold mb-4">คีย์บอร์ดย้อนกลับ</h1>
       <textarea
         className="border border-gray-300 rounded-lg p-3 w-full max-w-md h-40 bg-white text-gray-700 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
