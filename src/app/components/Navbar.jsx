@@ -17,9 +17,6 @@ function Navbar() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <Link href="/backboard">
-            <span className="text-white hover:text-gray-400 transition">Backboard</span>
-          </Link>
           <Link href="/bmi">
             <span className="text-white hover:text-gray-400 transition">BMI</span>
           </Link>
