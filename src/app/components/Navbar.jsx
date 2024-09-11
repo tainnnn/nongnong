@@ -3,10 +3,8 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
 
 function Navbar() {
-  const router = useRouter()
 
   return (
     <nav className="navbar bg-neutral-600 shadow-md">
