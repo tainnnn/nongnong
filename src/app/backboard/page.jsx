@@ -83,8 +83,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen p-6 bg-gray-100">
-      <h1 className="text-2xl font-bold mb-4">คีย์บอร์ดย้อนกลับ</h1>
+    <div className="flex flex-col items-center justify-center h-screen p-6 bg-gray-300">
+      <h1 className="text-2xl font-bold text-gray-300 mb-4 bg-gray-500 rounded-md p-3">คีย์บอร์ดย้อนกลับ</h1>
       <textarea
         className="border border-gray-300 rounded-lg p-3 w-full max-w-md h-40 bg-white text-gray-700 shadow-md focus:outline-none focus:ring-2 focus:ring-blue-500"
         value={input}
@@ -93,7 +93,7 @@ export default function Home() {
         onKeyUp={handleKeyUp}
         placeholder="กรุณาใส่ข้อความภาษาไทยหรือภาษาอังกฤษที่นี่..."
       />
-      <div className="mt-4 p-4 border border-gray-300 rounded-lg w-full max-w-md bg-white text-gray-700 shadow-md">
+      <div className="mt-4 p-4 border border-gray-300 rounded-lg w-full max-w-md bg-white text-gray-800 shadow-md">
         {output}
       </div>
     </div>

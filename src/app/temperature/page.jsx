@@ -41,43 +41,47 @@ const TemperatureConverter = () => {
   };
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-300 min-h-screen">
       <Navbar />
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold mb-4">Temperature Converter</h1>
-        <div className="mb-4">
-          <label htmlFor="celcius" className="block text-sm font-medium text-gray-700">Celcius</label>
+      <div className="container mx-auto w-fit px-10 py-16 mt-32 bg-gray-500 rounded-2xl">
+        <div className="bg-gray-400 rounded-md w-fit mx-auto mb-4">
+          <h1 className="text-2xl font-bold text-center text-gray-800 px-6 py-3">
+            Temperature Converter
+          </h1>
+        </div>
+
+        <div className="mb-4 flex justify-center">
           <input
             id="celcius"
             name="celcius"
             type="number"
             value={celcius}
             onChange={handleInputChange}
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            className="mt-1 block w-60 border border-gray-300 rounded-md p-2"
             placeholder="Enter temperature in Celcius"
           />
         </div>
-        <div className="mb-4">
-          <label htmlFor="fahrenheit" className="block text-sm font-medium text-gray-700">Fahrenheit</label>
+
+        <div className="mb-4 flex justify-center">
           <input
             id="fahrenheit"
             name="fahrenheit"
             type="number"
             value={fahrenheit}
             onChange={handleInputChange}
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            className="mt-1 block w-60 border border-gray-300 rounded-md p-2"
             placeholder="Enter temperature in Fahrenheit"
           />
         </div>
-        <div className="mb-4">
-          <label htmlFor="kelvin" className="block text-sm font-medium text-gray-700">Kelvin</label>
+
+        <div className="mb-4 flex justify-center">
           <input
             id="kelvin"
             name="kelvin"
             type="number"
             value={kelvin}
             onChange={handleInputChange}
-            className="mt-1 block w-full border border-gray-300 rounded-md p-2"
+            className="mt-1 block w-60 border border-gray-300 rounded-md p-2"
             placeholder="Enter temperature in Kelvin"
           />
         </div>
