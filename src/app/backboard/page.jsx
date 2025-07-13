@@ -93,7 +93,7 @@ export default function Home() {
         onKeyUp={handleKeyUp}
         placeholder="กรุณาใส่ข้อความภาษาไทยหรือภาษาอังกฤษที่นี่..."
       />
-      <div className="mt-4 p-4 border border-gray-300 rounded-lg w-full max-w-md bg-white text-gray-800 shadow-md">
+      <div className="mt-4 p-4 border border-gray-300 rounded-lg w-full max-w-md bg-white text-gray-800 shadow-md whitespace-pre-wrap break-words">
         {output}
       </div>
     </div>
